@@ -52,7 +52,7 @@ $(function(){
 			if($(this).hasClass('selected')){
 				var up_id = $(this).attr('id');
 				var slide_elem_up = $("#" + up_id + "_slide");
-				slide_elem_up.animate({marginTop: "-=300px"}, 500);
+				slide_elem_up.animate({marginTop: "-=230px"}, 500);
 				$(this).removeClass('selected');
 			}
 		});
