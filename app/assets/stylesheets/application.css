@@ -11,3 +11,116 @@
  *= require_self
  *= require_tree .
 */
+
+/*==== RESET ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*===== BEGIN SITE CSS =====*/
+
+body, html {
+	width: 100%;
+	height: 100%;
+	zoom: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+p {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.slide_box {
+	width: 400px;
+	height: 230px;
+	margin-top: -230px;
+	position: fixed;
+	top: 110px;
+	left: 40px;
+	background-color: #BEC09E;
+	z-index: -1;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 0 0 10px 0.5px;
+}
+
+.slide_box h2 {
+	color: #1D114D;
+	font-size: 20px;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin: 30px 0 0 20px;
+}
+
+.slide_box p {
+	/*color: #9A3304;*/
+	color: #1D114D;
+	font-size:14px;
+	font-family: 'Telex', sans-serif;
+	margin: 20px 20px 0 20px;
+	line-height: 22px;
+}
+
+#photo {
+	position: fixed;
+	top: 120px;
+	left: -3px;
+	height: 500px;
+	z-index: -2;
+}
+
+
+
+
+
+
+
+
+
+
+

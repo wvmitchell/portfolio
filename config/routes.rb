@@ -1,4 +1,11 @@
 Portfolio::Application.routes.draw do
+  
+  # Routes for main controller actions
+  match 'main/' => 'main#index'
+  match 'main/index' => 'main#index'
+  
+  root to: 'main#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
