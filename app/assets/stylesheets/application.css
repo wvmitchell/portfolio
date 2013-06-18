@@ -69,52 +69,25 @@ body, html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 p {
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.slide_box {
-	width: 400px;
-	height: 230px;
-	margin-top: -230px;
-	position: fixed;
-	top: 110px;
-	left: 40px;
-	background-color: #BEC09E;
-	z-index: +1;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	box-shadow: 0 0 10px 0.5px;
-}
-
-.slide_box h2 {
-	color: #1D114D;
-	font-size: 20px;
-	font-variant: small-caps;
+.bold {
 	font-weight: bold;
-	margin: 30px 0 0 20px;
 }
 
-.slide_box p {
-	/*color: #9A3304;*/
-	color: #1D114D;
-	font-size:14px;
-	font-family: 'Telex', sans-serif;
-	margin: 20px 20px 0 20px;
-	line-height: 22px;
+#blogs_index {
+	margin: 50px 50px 50px 50px;
 }
 
-#photo {
-	position: fixed;
-	top: 120px;
-	left: -3px;
-	height: 500px;
+#blogs_index h1 {
+	font-size: 20px;
+	margin-bottom: 10px;
 }
-
-
 
 
 

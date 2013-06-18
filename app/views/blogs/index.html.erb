@@ -1,0 +1,14 @@
+<div id="blogs_index">
+	<h1>Current Blog Entries</h1>
+
+
+<% @blogs.each do |blog| %>
+	
+	<h2 class="bold"><%= blog.title %></p>
+	<p><%= link_to "View", blog_path(blog)%> | <%= link_to "Edit", edit_blog_path(blog) %> | <%= link_to "Delete", blog_path(blog), method: :delete, confirm: "Are you sure you want to delete this entry? There is no going back."%></p><br />
+	
+<% end %>
+
+	<p><%= link_to "New Entry", new_blog_path %> | <%= link_to "Public Site", main_path %><p>
+
+</div>

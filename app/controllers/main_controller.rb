@@ -1,7 +1,7 @@
 class MainController < ApplicationController
   
   def index
-    @number = 3
+    @blog = Blog.last
   end
   
 end

@@ -1,8 +1,11 @@
 Portfolio::Application.routes.draw do
-  
+
   # Routes for main controller actions
   match 'main/' => 'main#index'
   match 'main/index' => 'main#index'
+  
+  # Routes for blog creation (will all be private)
+  resources :blogs
   
   root to: 'main#index'
   
