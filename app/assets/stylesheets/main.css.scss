@@ -95,9 +95,7 @@
 
 #photo {
 	position: fixed;
-	top: 120px;
-	left: -3px;
-	height: 500px;
+	height: 100%;
 }
 
 #header {
@@ -138,7 +136,7 @@
 	margin: 0 20px 0 20px;
 }
 
-#blog_space p, {
+#blog_space p {
 	color: #1D114D;
 	font-size:14px;
 	margin: 20px 80px 0 20px;
@@ -146,18 +144,11 @@
 }
 
 .info_container {
-	width: auto;
+	width: 50%;
 	height: 60%;
 	position: fixed;
 	top: 150px;
 	left: 500px;
 	overflow: scroll;
 	margin-top: 8px;
-}
-
-.info_container p {
-	color: #1D114D;
-	font-size:14px;
-	margin: 20px 80px 0 20px;
-	line-height: 22px;
 }

@@ -97,7 +97,16 @@ $(window).resize(function(){
 	}
 });
 
-
+// Function to rotate work panels
+$(function(){
+	$(".front").click(function(){
+		if($(this).parent().css('transform') == 'none'){
+			$(this).parent().css({'transform': "rotateY(+180deg)"});
+		} else {
+			$(this).parent().css({'transform': "none"});
+		}
+	});
+});
 
 
 
