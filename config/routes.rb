@@ -8,6 +8,14 @@ Portfolio::Application.routes.draw do
   # Routes for blog creation (will all be private)
   resources :blogs
   
+  # Routes for Users
+  resources :users
+  
+  resources :user_sessions, only: [:new, :create, :destroy]
+  
+  match 'login' => 'user_sessions#new'
+  match 'logout' => 'user_sessions#destroy'
+  
   root to: 'main#index'
   
   

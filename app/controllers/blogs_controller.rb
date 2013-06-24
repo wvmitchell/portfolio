@@ -1,5 +1,7 @@
 class BlogsController < ApplicationController
   
+  before_filter :require_login
+  
   def index
     @blogs = Blog.all
   end

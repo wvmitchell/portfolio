@@ -95,6 +95,7 @@ $(function(){
 		// Make sure all fields are filled out, if not, take action
 		if($("#name").val() == "" || $("#email").val() == "" || $("#text").val() == ""){
 			alert("Fill out the form!");
+			return false;
 		} else {
 			// If all fields are filled, submit form
 			var dataSet = $(this).serialize();
