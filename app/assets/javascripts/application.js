@@ -80,33 +80,39 @@ $(function(){
 	});
 });
 
-// Adjust header tab if window is too small on load
-$(function(){
-	if($(window).width() < 740){
-		$("#header").css({"width": "60px", "top": "150px"});
-	}
-});
-
-
-// If screen becomes too small
-$(window).resize(function(){
-	if($(window).width() < 740){
-		$("#header").css({"width": "60px", "top": "150px"});
-	} else if($(window).width() > 740) {
-		$("#header").css({"width": "200px", "top": "60px"});
-	}
-});
-
 // Function to rotate work panels
+$(document).on('mouseenter mouseleave click', '.front', function(){
+	if($(this).parent().css('transform') == 'none'){
+		$(this).parent().css({'transform': "rotateY(+180deg)"});
+	} else {
+		$(this).parent().css({'transform': "none"});
+	}
+});
+
+// AJAX Function to submit email form without refreshing page
 $(function(){
-	$(".front").click(function(){
-		if($(this).parent().css('transform') == 'none'){
-			$(this).parent().css({'transform': "rotateY(+180deg)"});
+	$("#contact_me").submit(function(){
+		// Make sure all fields are filled out, if not, take action
+		if($("#name").val() == "" || $("#email").val() == "" || $("#text").val() == ""){
+			alert("Fill out the form!");
 		} else {
-			$(this).parent().css({'transform': "none"});
+			// If all fields are filled, submit form
+			var dataSet = $(this).serialize();
+			$.ajax({
+				type: "POST",
+				url: $(this).attr("action"),
+				data: dataSet,
+				// Function to execute once email is sent
+				complete: function(){
+					$("#contact_me").toggle();
+					alert("Sent!");
+				},
+				error: function(){
+					alert("Something went wrong!");
+				}
+			});
+			return false;
 		}
 	});
-});
-
-
+})
 

@@ -3,11 +3,13 @@ Portfolio::Application.routes.draw do
   # Routes for main controller actions
   match 'main/' => 'main#index'
   match 'main/index' => 'main#index'
+  match 'main/email_me' => 'main#email_me'
   
   # Routes for blog creation (will all be private)
   resources :blogs
   
   root to: 'main#index'
+  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,3 +1,17 @@
-<p>I love chatting with just about anyone, so if you'd like to get in touch, please don't hesitate. I keep my social networks up to date, and I check email daily. I'm of course interested in new work projects, but even you're just a new developer looking for some direction in the dark of night, please feel free to say hi!</p>
+<div id="form_wrapper">
+	<h3>Drop me a line</h3>
+	<%= form_tag({controller: "main", action: "email_me"}, id: "contact_me", remote: "true") do %>
+		<div>
+			<%= text_field_tag(:name, nil, :placeholder => "Name") %>
+		</div>
+		<div>
+			<%= text_field_tag(:email, nil, :placeholder => "email@example.com") %>
+		</div>
+		<div>
+			<%= text_area_tag(:text, nil, :placeholder => "What's on your mind?")%>
+		</div>
+	
+		<%= submit_tag("Say Hello!", id: "submit_email")%>
+	<% end %>
+</div>
 
-<p>I love chatting with just about anyone, so if you'd like to get in touch, please don't hesitate. I keep my social networks up to date, and I check email daily. I'm of course interested in new work projects, but even you're just a new developer looking for some direction in the dark of night, please feel free to say hi!</p>

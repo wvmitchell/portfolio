@@ -17,15 +17,15 @@
 		</div>
 		<div class="slide_box" id="bio_slide">
 			<h2>Will Mitchell is the name</h2>
-			<p>I grew up in sunny Boulder, CO and attended the CU Boulder for my undergraduate degree in Economics. After graduating, I began teaching myself programming and software engineering. I love what I do, working currently as a freelancer, but hope to work on a longer term project in the future.
+			<p>So you'd like some vitals huh? Well I'm happy to provide them. Please go forth, learn about me, check out my work. If you have a cool project that you think could use my talents, and I sound like a good fit for your team, please feel free to contact me at your convenience. I'm always looking for the next big thing to throw my energy behind.</p>
 		</div>
 		<div class="slide_box" id="contact_slide">
 			<h2>I'll hit you with my digits</h2>
-			<p>I love chatting with just about anyone, so if you'd like to get in touch, please don't hesitate. I keep my social networks up to date, and I check email daily. I'm of course interested in new work projects, but even you're just a new developer looking for some direction in the dark of night, please feel free to say hi!
+			<p>I love chatting with just about anyone, so if you'd like to get in touch, please don't hesitate. I keep my social networks up to date, and I check email daily. I'm of course interested in new work projects, but even you're just a new developer looking for some direction in the dark of night, please feel free to say hi!</p>
 		</div>
 		<div class="slide_box" id="code_slide">
 			<h2>Need a little help?</h2>
-			<p>Given the rise of SAAS technologies, I've recently turned my focus towards improving my JS and jQuery skills for front end development, and RoR for the back end. Here are some snippets of mine which others might find potentially useful. If something here helps you out, please consider making a donation.
+			<p>Given the rise of SAAS technologies, I've recently turned my focus towards improving my JS and jQuery skills for front end development, and RoR for the back end. Here are some snippets of mine which others might find potentially useful. If something here helps you out, please consider making a donation.</p>
 		</div>
 	</div>
 	<%= image_tag("me2.png", id: :photo) %>
@@ -39,18 +39,26 @@
 	</div>
 	
 	<div id="work_container" class="info_container" hidden="true">
-		<%= render 'recent_work' %>
+		<div class="inner_info_container">
+			<%= render 'recent_work' %>
+		</div>	
 	</div>
 	
 	<div id="bio_container" class="info_container" hidden="true">
-		<%= render 'bio'%>
+		<div class="inner_info_container">
+			<%= render 'bio'%>
+		</div>	
 	</div>
 	
 	<div id="contact_container" class="info_container" hidden="true">
-		<%= render 'contact' %>
+		<div class="inner_info_container">
+			<%= render 'contact' %>
+		</div>
 	</div>
 	
 	<div id="code_container" class="info_container" hidden="true">
-		<%= render 'code_library' %>
+		<div class="inner_info_container">
+			<%= render 'code_library' %>
+		</div>
 	</div>
 </div>

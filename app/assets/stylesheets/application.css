@@ -65,7 +65,8 @@ body, html {
 	width: 100%;
 	height: 100%;
 	zoom: 100%;
-	background-color: #E1D7D7;
+	/*background-color: #E1D7D7;*/
+	background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,6 +82,64 @@ p {
 }
 
 
+/*===== CONTACT SECTION =====*/
+
+*:focus {
+	outline: none;
+}
+
+#form_wrapper {
+	width: 100%;
+	height: auto;
+}
+
+#contact_me {
+	width: 70%;
+	height: auto;
+}
+
+#email, #name {
+	width: 100%;
+	height: 20px;
+	margin: 20px 0 0 0;
+	padding: 5px 15px;
+	font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	border: 1px solid #E1D7D7;
+	border-radius: 5px;
+}
+
+#text {
+	width: 100%;
+	height: 150px;
+	resize: none;
+	font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 15px 15px;
+	margin: 20px 0 0 0;
+	border: 1px solid #E1D7D7;
+	border-radius: 5px;
+}
+
+#submit_email {
+	width: 100px;
+	height: 30px;
+	margin-top: 15px;
+	float: right;
+	margin-right: -32px;
+	background-color: #86B370;
+	border: none;
+	border-radius: 5px;
+	font-family: 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
+}
+
+#submit_email:hover {
+	background-color: #658654;
+}
+
+#form_wrapper h3 {
+	color: #1D114D;
+	font-size: 16px;
+}
 
 
 
